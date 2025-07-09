@@ -11,13 +11,6 @@ def language_buttons():
     markup.add(uz, ru)
     return markup
 
-# "Men haqimda" tugmasi uchun inline tugma
-def about_button(text):
-    markup = InlineKeyboardMarkup()
-    about = InlineKeyboardButton(text=text, callback_data="about")
-    markup.add(about)
-    return markup
-
 # Telefon raqam jo'natish uchun tugma (reply)
 def phone_button(text):
     markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
@@ -25,11 +18,20 @@ def phone_button(text):
     markup.add(phone)
     return markup
 
+# "Men haqimda" tugmasi uchun inline tugma
+def about_button(text):
+    markup = InlineKeyboardMarkup()
+    about = InlineKeyboardButton(text=text, callback_data="about")
+    markup.add(about)
+    return markup
 
 
-# /start tugmasi (reply keyboard)
+
+
+
+"""# /start tugmasi (reply keyboard)
 def start_reply_button(text):
     markup = ReplyKeyboardMarkup(resize_keyboard=True)
     button = KeyboardButton(text=text)
     markup.add(button)
-    return markup
+    return markup"""
