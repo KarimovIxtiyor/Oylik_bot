@@ -4,5 +4,3 @@ Yuborildi: 562831245 | Ixtiyor Karimov | 📞 +998936015371 | 🕒 2025-07-09 10
 
  Umumiy yuborilgan: 1 ta
   Xatoliklar: 0 ta
-rm -rf .git
-rm -rf .git
